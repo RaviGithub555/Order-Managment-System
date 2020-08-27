@@ -1,0 +1,40 @@
+package com.order.system;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+
+@SpringBootApplication 
+public class OrderManagmentApplication implements CommandLineRunner{
+	
+	
+	
+	@Value("${app.run-frequency}")
+	private long frequency;
+	
+	
+	 protected static Logger logger = LogManager.getLogger(OrderManagmentApplication.class);
+	 private static String ERROR = "zeebe connection failed.";
+
+	public static void main(String[] args) {
+		SpringApplication.run(OrderManagmentApplication.class, args);
+		
+	}
+
+	
+	public void run(String... args) throws Exception {
+		try {
+			   Long start = System.currentTimeMillis();
+			
+		} catch(Exception e) {
+		}
+		
+        }
+		
+}
+
+
