@@ -20,7 +20,7 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api/employee")
 public class EmployeeController {
-	private static final Logger log = LogManager.getLogger(OrderSystemController.class);
+	private static final Logger log = LogManager.getLogger(EmployeeController.class);
 
     @Autowired
     private EmployeeRepository employeeRepository;

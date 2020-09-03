@@ -24,7 +24,7 @@ import java.util.Optional;
 @Slf4j
 public class SupplierController {
 	
-	private static final Logger log = LogManager.getLogger(OrderSystemController.class);
+	private static final Logger log = LogManager.getLogger(SupplierController.class);
 
     @Autowired
     private SupplierRepository supplierRepository;

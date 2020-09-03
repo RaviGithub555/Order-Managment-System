@@ -19,7 +19,7 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api/product")
 public class ProductController {
-	private static final Logger log = LogManager.getLogger(OrderSystemController.class);
+	private static final Logger log = LogManager.getLogger(ProductController.class);
 
     @Autowired
     private ProductRepository productRepository;

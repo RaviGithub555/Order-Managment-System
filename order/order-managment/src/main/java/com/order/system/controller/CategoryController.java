@@ -21,9 +21,9 @@ import java.util.Optional;
 @RequestMapping("/api/category")
 public class CategoryController {
 	
-	private static final Logger log = LogManager.getLogger(OrderSystemController.class);
+	private static final Logger log = LogManager.getLogger(CategoryController.class);
 
-    @Autowired
+    @Autowired(required=true)
     private CategoryRepository categoryRepository;
 
     @Autowired

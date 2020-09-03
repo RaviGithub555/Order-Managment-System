@@ -26,7 +26,7 @@
 		<netty.transport.version>5.0.0.Alpha2</netty.transport.version>
 		<zeebe.client.version>0.17.0</zeebe.client.version>
 		<spring.boot.jpa.version>2.1.4.RELEASE</spring.boot.jpa.version>
-		<spring.boot.mongodb.version>2.1.4.RELEASE</spring.boot.mongodb.version>
+<!-- 		<spring.boot.mongodb.version>2.1.4.RELEASE</spring.boot.mongodb.version> -->
 		<jackson.dataformat.xml.version>2.9.8</jackson.dataformat.xml.version>
 		<spring.boot.web.version>2.1.4.RELEASE</spring.boot.web.version>
 		<spring.cloud.eureka.version>1.4.6.RELEASE</spring.cloud.eureka.version>
@@ -61,10 +61,10 @@
 	  </profiles>
 
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-mongodb</artifactId>
-		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.springframework.boot</groupId> -->
+<!-- 			<artifactId>spring-boot-starter-data-mongodb</artifactId> -->
+<!-- 		</dependency> -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
@@ -162,7 +162,7 @@
 			<dependency>
 				<groupId>com.h2database</groupId>
 				<artifactId>h2</artifactId>
-				<scope>compile</scope>
+				<scope>runtime</scope>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
